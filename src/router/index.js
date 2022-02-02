@@ -1,7 +1,7 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
 import Home from "../views/Home.vue"
-import AboutSingleBook from "../views/AboutSingleBook"
+import BookDetails from "../views/BookDetails"
 
 Vue.use(VueRouter)
 
@@ -15,9 +15,9 @@ const router = new VueRouter({
       component: Home,
     },
     {
-      path: "/..views/AboutSingleBook/:book",
-      name: "About Single Book",
-      component: AboutSingleBook,
+      path: "/details/:title",
+      name: "BookDetails",
+      component: BookDetails,
     },
   ],
 })
